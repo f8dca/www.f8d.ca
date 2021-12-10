@@ -1,0 +1,78 @@
+site_name: F8D
+site_url: https://f8d.ca
+site_author: Gabor Sos
+site_description: Just another technology blog from the trenches of IT.
+
+theme:
+    name: material
+    custom_dir: docs/theme
+    features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+#    - toc.integrate
+    - content.code.annotate
+
+
+plugins:
+  - search
+  # https://pypi.org/project/mkdocs-include-dir-to-nav/
+  - include_dir_to_nav:
+      flat: true
+  # https://pypi.org/project/mkdocs-encryptcontent-plugin/
+  - encryptcontent:
+  # https://github.com/fralau/mkdocs-mermaid2-plugin
+  - mermaid2
+
+
+nav:
+  - 'Home': index.md
+  - 'Blog': blog
+  - GitHub : 'https://github.com/f8dca'
+  - LinkedIn : 'https://www.linkedin.com/in/f8d'
+  - Bugs : "http://bugs.f8d.ca/"
+  
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:mermaid2.fence_mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - markdown_blockdiag:   # https://github.com/gisce/markdown-blockdiag
+      format: svg
+  - lightgallery
+
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
+
