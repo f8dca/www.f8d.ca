@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 ## Article 1
 just some test comes here
 
