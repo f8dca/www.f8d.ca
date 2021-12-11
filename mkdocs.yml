@@ -2,10 +2,15 @@ site_name: F8D
 site_url: https://f8d.ca
 site_author: Gabor Sos
 site_description: Just another technology blog from the trenches of IT.
+repo_url: https://github.com/f8dca/www.f8d.ca
+repo_name: f8d.ca
+edit_uri: edit/master/docs/
 
 theme:
     name: material
     custom_dir: docs/theme
+    icon:
+      repo: fontawesome/brands/git-alt
     features:
     - navigation.instant
     - navigation.tabs
@@ -24,6 +29,10 @@ plugins:
   - encryptcontent:
   # https://github.com/fralau/mkdocs-mermaid2-plugin
   - mermaid2
+  - git-revision-date-localized
+        type: date
+        fallback_to_build_date: true
+
 
 
 nav:
