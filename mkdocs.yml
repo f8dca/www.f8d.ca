@@ -16,7 +16,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-#    - toc.integrate
+    - navigation.indexes
     - content.code.annotate
 
 
@@ -29,9 +29,9 @@ plugins:
   - encryptcontent:
   # https://github.com/fralau/mkdocs-mermaid2-plugin
   - mermaid2
-  - git-revision-date-localized
-        type: date
-        fallback_to_build_date: true
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
 
 
 
